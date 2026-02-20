@@ -44,3 +44,14 @@ nav #menu_mobile{
 nav #menu_mobile > div{
     display: flex;
 }
+
+/*@media es una regla de css que se utiliza para aplicar estilos especificos a diferentes tama;os de pantalla o dispositivos
+Permite crear dise;os reponsivos que se adaptan a diferentes condificones de visualizacion 
+las medidas estandares para las pantallas son: 
+
+extra small device(phones, 600px and down)
+@media only screen an (max-width:600px){...}
+
+Medium device (
+
+*/

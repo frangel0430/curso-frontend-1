@@ -1,0 +1,24 @@
+header{
+
+  display: flex
+  
+  /*Flex-direction me permite cambiar la direccion de los elementos hijos 
+  row: los elementos se alinean horizontalmente(por defecto)
+  column: los elementos se alinean verticalmente
+  
+  */;
+flex-direction: column;
+background-color: url(../assets/header.jpg) no-repeat center center/cover;
+
+/*
+background-size me permite controlar el tama;o de la imagen de fondo 
+posibles valores:
+cover: la imagen se escala para cubrir todo el contenedor, manteniendo su proporción,
+contain: la imagen se escala para ajustarse al contenedor, manteniendo su proporción, pero puede dejar espacio vacío si las proporciones no coinciden
+auto: la imagen mantiene su tamaño original
+100% 100%: la imagen se estira para llenar el contenedor, sin mantener su proporción
+un valor específico (por ejemplo, 200px 300px): la imagen se escala a las dimensiones especificadas, sin mantener su proporción
+
+*/
+
+}
