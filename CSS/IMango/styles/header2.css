@@ -17,7 +17,7 @@ header {
   */
   align-items: center;
   padding: 30px 20px;
-  background-image: url("https://www.apple.com/v/home/cl/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_large.jpg");
+  background-image: url("https://www.apple.com/v/home/cl/images/heroes/ipad-air/hero_ipad_air_avail__c34ycq52exg2_mediumtall.jpg");
   /*
     background-size me permite controlar el tamaño de la imagen de fondo.
     Posibles valores:
@@ -62,46 +62,3 @@ header {
   */
   min-height: 500px;
 }
-
-header > h2 {
-  font-size: 48px;
-}
-
-header > h3 {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-header > div{
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.boton-destacado {
-  background-color: #0071e3;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 20px;
-  border: none;
-}
-
-.boton {
-  background-color: transparent;
-  color: #0071e3;
-  padding: 6px 20px;
-  border-radius: 25px;
-  /*
-  border me permite establecer un borde alrededor de un elemento.
-  */
-  border: 1px solid #0071e3;
-}
-
-/*
-header > div > button:first-child {
-  background-color: white;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 20px;
-}
-*/
