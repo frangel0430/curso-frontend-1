@@ -4,20 +4,12 @@ nav #contendor {
 }
 
 nav #menu_movil {
-
-
-
-  justify-content: space-between;
-  padding: 0px 0px;
-
-  width: 100%;
-}
-
-nav #menu_movil>div {
   display: flex;
-  gap: 30px;
+  gap: 20px;
+  justify-content: center;
 }
-
+ 
+ 
 
 .categorias {
   display: flex;
@@ -149,43 +141,46 @@ nav #menu_movil>div {
   justify-content: flex-start;
   align-items: center;
 }
+ 
 
-.cuadricula {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  align-items: center;
-}
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 
 
   nav #menu_movil {
     display: none;
 
   }
-
-
-
+  nav .izquierda_movil {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .izquierda {
     display: flex;
     justify-content: flex-start;
-
+    
   }
 
   .centro {
-    display: flex;
-    gap: 10px; 
+   
+    justify-content: center;
   }
-  .buscador {
+  .buscador > input {
     margin: 0;
   }
 
   .derecha {
     display: none;
+  }
+ 
+}
+@media only screen and (max-width: 768px) {
+  .izquierda_movil {
+       min-width: 225px;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
