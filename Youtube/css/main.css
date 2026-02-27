@@ -1,230 +1,208 @@
- .body {
-   background-color: #262626;
- }
+.body {
+  background-color: #262626;
+}
 
- .cuadricula {
-   display: grid;
- }
+.cuadricula {
+  display: grid;
+}
 
- .fila {
-   display: flex;
- }
+.fila {
+  display: flex;
+}
 
- .padding-general {
-   padding: 10px 30px;
- }
+.padding-general {
+  padding: 10px 30px;
+}
 
- .centrar-contenido {
-   justify-content: center;
-   align-items: center;
- }
+.centrar-contenido {
+  justify-content: center;
+  align-items: center;
+}
 
- .tres-columnas {
-   grid-template-columns: repeat(3, 1fr);
- }
+.tres-columnas {
+  grid-template-columns: repeat(3, 1fr);
+}
 
- .start {
-   justify-content: flex-start;
-   align-items: center;
-   margin-left: 70px;
- }
+.start {
+  justify-content: flex-start;
+  align-items: center;
+}
 
- .centro {
-   justify-content: center;
- }
+.centro {
+  justify-content: center;
+}
 
- .derecha {
-   justify-content: flex-end;
+.derecha {
+  justify-content: flex-end;
+}
 
- }
+.botones {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
- .botones {
-   background-color: transparent;
-   border: none;
-   color: white;
-   font-size: 16px;
-   cursor: pointer;
+.estiloCategoriasMobile {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 
- }
+.botonCategoriaMobile {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
- .estiloCategoriasMobile {
-   grid-column: 1 / -1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 10px;
- }
+.videos iframe {
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+}
 
- .botonCategoriaMobile {
-   background-color: transparent;
-   border: none;
-   color: white;
-   font-size: 16px;
-   cursor: pointer;
- }
+.Shorts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
 
+.Shorts iframe {
+  width: 500px;
+  height: 800px;
+  border-radius: 9px;
+}
 
- .videos iframe {
-   justify-content: center;
-   gap: 5px;
-   padding: 20px;
-   width: 500px;
-   height: 300px;   
- }
+.botonBuscar {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
- .Shorts {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 15px;
-   justify-content: center;
-   padding: 20px;
- }
+.botonPrincipal > button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
- .Shorts iframe {
-   width: 500px;
-   height: 800px;
-   border-radius: 9px;
- }
+.estiloTexto {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
 
- .botonBuscar {
-   background-color: transparent;
-   border: none;
-   color: white;
-   font-size: 16px;
-   cursor: pointer;
- }
+.columna {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
 
- .botonPrincipal>button {
-   background-color: transparent;
-   border: none;
-   color: white;
-   font-size: 16px;
-   cursor: pointer;
+.InputBusqueda {
+  border: none;
+  background-color: rgb(73, 72, 72);
+  font-size: 16px;
+  border-radius: 5px;
+}
 
- }
+@media only screen and (max-width: 768px) {
+  .botonPrincipal {
+    display: none;
+  }
 
- .estiloTexto {
-   color: white;
-   text-align: center;
-   margin-top: 10px;
+  .menuIzquierda {
+    display: none;
+  }
 
- }
+  .start {
+    justify-content: flex-start;
+    align-items: center;
+  }
 
- .columna {
-   display: flex;
-   flex-direction: column;
-   position: fixed;
-   width: 200px;
-   margin-left: -56px;
-   height: fit-content;
- }
+  .derecha {
+    justify-content: flex-end;
+  }
 
- .menuIzquierda {
-   margin-top: -55px;
- }
+  .centro {
+    justify-content: center;
+  }
 
- .InputBusqueda {
-   border: none;
-   background-color: rgb(73, 72, 72);
-   font-size: 16px;
-   border-radius: 5px;
- }
+  .icono.mobile {
+    display: block;
+  }
 
- @media only screen and (max-width: 768px) {
-   .botonPrincipal {
-     display: none;
-   }
+  .espacio_centro {
+    padding: 5px;
+  }
 
-   .menuIzquierda {
-     display: none;
+  .espacio_iconos {
+    gap: 5px;
+  }
 
-   }
+  .botones {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-   .start {
-     justify-content: flex-start;
-     align-items: center;
-   }
+  .botonBuscar {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-   .derecha {
-     justify-content: flex-end;
+  .InputBusqueda {
+    border: 4px;
+    color: rgb(73, 72, 72);
+    font-size: 16px;
+  }
 
-   }
+  nav > .estiloCategoriasMobile {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
 
-   .centro {
-     justify-content: center;
-   }
+  .botonCategoriaMobile {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-   .icono.mobile {
-     display: block;
-   }
+  .Shorts {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
-   .espacio_centro {
-     padding: 5px;
-   }
+  .Shorts iframe {
+    width: 90vw;
+    height: 160vw;
+    max-width: 350px;
+    max-height: 620px;
+  }
 
-   .espacio_iconos {
-     gap: 5px;
-   }
-
-   .espacio_logo {
-     margin-left: -25px;
-   }
-
-   .botones {
-     background-color: transparent;
-     border: none;
-     color: white;
-     font-size: 16px;
-     cursor: pointer;
-
-   }
-
-   .botonBuscar {
-     background-color: transparent;
-     border: none;
-     color: white;
-     font-size: 16px;
-     cursor: pointer;
-   }
-
-   .InputBusqueda {
-
-     border: 4px;
-     color: rgb(73, 72, 72);
-     font-size: 16px;
-
-   }
-
-   nav>.estiloCategoriasMobile {
-     display: flex;
-     justify-content: center;
-     gap: 5px
-   }
-
-   .botonCategoriaMobile {
-     background-color: transparent;
-     border: none;
-     color: white;
-     font-size: 16px;
-     cursor: pointer;
-   }
-
-   .Shorts {
-     flex-direction: column;
-     align-items: center;
-     padding: 10px;
-   }
-
-   .Shorts iframe {
-     width: 90vw;
-     height: 160vw;
-     max-width: 350px;
-     max-height: 620px;
-   }
-
-   .videos {
-     flex-direction: column;
-     align-items: center;
-     padding: 10px;
-   }
- }
+  .videos {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}

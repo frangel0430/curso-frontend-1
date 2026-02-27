@@ -1,86 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copia de youtube</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copia de youtube</title>
-  <link rel="stylesheet" href="./css/general.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body class="body">
+    <nav class="cuadricula tres-columnas padding-general">
+      <div class="start fila espacio_logo">
+        <img src="./menu.svg" alt="Icono de menú" height="40" />
+        <img src="./logo.svg" alt="Logo de YouTube" width="90" height="20" />
+      </div>
+      <div class="centro fila">
+        <input class="InputBusqueda" type="text" placeholder="Buscar" />
+        <button class="botonBuscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="derecha fila espacio_iconos">
+        <button class="botones"><i class="fa-solid fa-microphone"></i></button>
+        <button class="botones"><i class="fa-solid fa-video"></i></button>
+        <button class="botones"><i class="fa-solid fa-bell"></i></button>
+        <button class="botones"><i class="fa-solid fa-user"></i></button>
+      </div>
+    </nav>
 
-</head>
+    <main style="display: grid; grid-template-columns: 4% 96%">
+      <aside class="columna menuIzquierda">
+        <img src="./home.svg" alt="Icono de inicio" height="40" />
+        <h6 class="estiloTexto">Principal</h6>
 
-<body class="body">
-  <nav class="cuadricula tres-columnas padding-general">
-    <div class="start fila espacio_logo">
-      <img src="./logo.svg" alt="Logo de YouTube" width="90" height="20">
-    </div>
-    </div>
-    <div class="centro fila">
-      <input class="InputBusqueda" type="text" placeholder="Buscar">
-      <button class="botonBuscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    <div class="derecha fila espacio_iconos">
-      <button class="botones"><i class="fa-solid fa-microphone"></i></button>
-      <button class="botones"><i class="fa-solid fa-video"></i></button>
-      <button class="botones"><i class="fa-solid fa-bell"></i></button>
-      <button class="botones"><i class="fa-solid fa-user"></i></button>
-    </div>
-    <div class="estiloCategoriasMobile">
-      <button class="botonCategoriaMobile">Todo</button>
-      <button class="botonCategoriaMobile">Música</button>
-      <button class="botonCategoriaMobile">Videojuegos</button>
-      <button class="botonCategoriaMobile">Mixes</button>
-      <button class="botonCategoriaMobile">En directo</button>
-      <button class="botonCategoriaMobile">Programación</button>
-    </div>
-  </nav>
-  <nav class="columna menuIzquierda">
-      <img src="./menu.svg" alt="Icono de menú" height="40">
-   
-      <img src="./home.svg" alt="Icono de inicio"height="40" >
-      <h6 class="estiloTexto">Principal</h6>
+        <img src=" ./shorts.svg" alt="Icono de shorts" height="40" />
+        <h6 class="estiloTexto">shorts</h6>
 
-      <img src=" ./shorts.svg" alt="Icono de shorts" height="40" >
-      <h6 class="estiloTexto">shorts</h6>
-  
-      <img src=" ./suscripciones.svg" alt="Icono de suscripciones"height="40"  >
-      <h6 class="estiloTexto">suscripciones</h6>
-  
-      <img src=" ./tu.svg" alt="Icono de biblioteca"height="40"  >
-      <h6 class="estiloTexto">tu</h6>
-    </button>
-  </nav>
-  <main>
-    <section class="fila videos centro">
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-    </section>
+        <img
+          src=" ./suscripciones.svg"
+          alt="Icono de suscripciones"
+          height="40"
+        />
+        <h6 class="estiloTexto">suscripciones</h6>
 
-    <section class="Shorts">
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-      <iframe src="https://www.youtube.com/embed/Etz-fd793ww" frameborder="0" allowfullscreen>
-      </iframe>
-
-    </section>
-
-  </main>
-</body>
+        <img src=" ./tu.svg" alt="Icono de biblioteca" height="40" />
+        <h6 class="estiloTexto">tu</h6>
+      </aside>
+      <div>
+        <div class="estiloCategoriasMobile">
+          <button class="botonCategoriaMobile">Todo</button>
+          <button class="botonCategoriaMobile">Música</button>
+          <button class="botonCategoriaMobile">Videojuegos</button>
+          <button class="botonCategoriaMobile">Mixes</button>
+          <button class="botonCategoriaMobile">En directo</button>
+          <button class="botonCategoriaMobile">Programación</button>
+        </div>
+        <section class="fila videos centro">
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+        <section class="Shorts">
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            src="https://www.youtube.com/embed/Etz-fd793ww"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
