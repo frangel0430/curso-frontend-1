@@ -17,12 +17,13 @@
   <nav class="cuadricula tres-columnas padding-general">
     <div class="start fila espacio_logo">
 
-      <img src="./menu.svg" alt="Icono de menú" height="35" />
-
+      <button class="menu-button" aria-label="Menú principal">
+        <img src="./menu.svg" alt="Icono de menú" height="35" width="35" />
+      </button>
       <img src="./logo.svg" alt="Logo de YouTube" width="90" height="20" />
     </div>
     <div class="centro fila">
-      <input class="InputBusqueda movil" type="text" placeholder="Buscar" />
+      <input class="InputBusqueda movil centro" type="text" placeholder="Buscar" />
       <button class="botonBuscar movil">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
@@ -35,35 +36,44 @@
     </div>
   </nav>
 
-<main style="display: grid; grid-template-columns: 72px 1fr; width: 100%;">    <aside class="columna menuIzquierda">
-      <img src="./home.svg" alt="Icono de inicio" height="25" />
-      <h6 class="estiloTexto">Principal</h6>
+  <main style="display: grid; grid-template-columns: 72px 1fr; width: 100%;">
+    <aside class="menuIzquierda">
+      <div class="menu-item active">
+        <img src="./home.svg" alt="Icono de inicio" />
+        <span>Principal</span>
+      </div>
 
-      <img src=" ./shorts.svg" alt="Icono de shorts" height="25" />
-      <h6 class="estiloTexto">shorts</h6>
+      <div class="menu-item">
+        <img src="./shorts.svg" alt="Icono de shorts" />
+        <span>Shorts</span>
+      </div>
 
-      <img src=" ./suscripciones.svg" alt="Icono de suscripciones" height="25" />
-      <h6 class="estiloTexto">suscripciones</h6>
+      <div class="menu-item">
+        <img src="./suscripciones.svg" alt="Icono de suscripciones" />
+        <span>Suscripciones</span>
+      </div>
 
-      <img src=" ./tu.svg" alt="Icono de biblioteca" height="25" />
-      <h6 class="estiloTexto">tu</h6>
+      <div class="menu-item">
+        <img src="./tu.svg" alt="Icono de biblioteca" />
+        <span>Tu</span>
+      </div>
     </aside>
     <div>
       <div class="estiloCategoriasDesktop">
         <button class="botonCategoriaDesktop">Todo</button>
+        <button class="botonCategoriaDesktop">Ruio blanco</button>
+        <button class="botonCategoriaDesktop">Videojuegos</button>
         <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
-        <button class="botonCategoriaDesktop">Música</button>
+        <button class="botonCategoriaDesktop">En tiempo real</button>
+        <button class="botonCategoriaDesktop">El rubius</button>
+        <button class="botonCategoriaDesktop">Poppy Playtime</button>
+        <button class="botonCategoriaDesktop">Podcast</button>
+        <button class="botonCategoriaDesktop">Susurros</button>
+        <button class="botonCategoriaDesktop">Pop electronico</button>
+        <button class="botonCategoriaDesktop">Tempurizadores</button>
+        <button class="botonCategoriaDesktop">Dance pop</button>
+        <button class="botonCategoriaDesktop">Listas de reproduccion</button>
+        <button class="botonCategoriaDesktop">Regueton</button>
       </div>
 
       <div class="estiloCategoriasMobile">
@@ -72,9 +82,9 @@
         <button class="botonCategoriaMobile">Videojuegos</button>
         <button class="botonCategoriaMobile">Mixes</button>
       </div>
-      <section class="fila videos espacio_entre_videos padding-general">
-        <div>
-          <img src="./image/hqdefault.jpg" alt=" Miniatura del video" width="570" class="tamanoMiniaturaMobil" />
+      <section class="videos-grid padding-general">
+        <div class="video-item">
+          <img src="./image/hqdefault.jpg" alt="Miniatura del video" />
           <div class="titulo">
             <h5>Mix: PTAZETA || BZRP Musics Sessions #45</h5>
           </div>
@@ -82,8 +92,8 @@
             <h5>Ptazeta, Auela AA, Bizarrap y mucho más</h5>
           </div>
         </div>
-        <div>
-          <img src="./image/1.avif" alt=" Miniatura del video" width="570" class="tamanoMiniaturaMobil" />
+        <div class="video-item">
+          <img src="./image/1.avif" alt="Miniatura del video" />
           <div class="titulo">
             <h5>Mix: Billie Bust Up (Orinal Game Soundtrack)-"A Millon Gruesome Ways To Die" </h5>
           </div>
@@ -91,9 +101,8 @@
             <h5>Daniel Ingram y mucho más</h5>
           </div>
         </div>
-
-        <div class="movil">
-          <img src="./image/miniatura.jpg" alt="" width="570" class="tamanoMiniaturaMobil">
+        <div class="video-item movil">
+          <img src="./image/miniatura.jpg" alt="Miniatura del video">
           <div class="titulo">
             <h5>Mix: Pitch Perfect - Since U Been Gone(HD) </h5>
           </div>
@@ -101,7 +110,6 @@
             <h5>Ester Dean, Anna Kendrick, Shelley Regner y mucho más</h5>
           </div>
         </div>
-
 
       </section>
       <div class="contenedor">
